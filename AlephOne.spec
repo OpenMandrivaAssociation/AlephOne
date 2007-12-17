@@ -12,7 +12,6 @@ Source0:	%name-20051119.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 Patch0:         AlephOne-fix-build.patch 
 URL:		http://sourceforge.net/projects/marathon/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libSDL-devel
 BuildRequires: libMesaGLU-devel
 BuildRequires: SDL_net-devel
