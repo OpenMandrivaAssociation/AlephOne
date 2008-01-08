@@ -14,7 +14,7 @@ Patch0:         AlephOne-fix-build.patch
 URL:		http://sourceforge.net/projects/marathon/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libSDL-devel
-BuildRequires: libMesaGLU-devel
+BuildRequires: mesaglu-devel
 BuildRequires: SDL_net-devel
 BuildRequires: boost-devel
 
