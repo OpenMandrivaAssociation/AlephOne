@@ -1,6 +1,6 @@
 %define name	AlephOne
-%define version 0.13.0
-%define release %mkrel 0.20051119.4
+%define version 0.19.0
+%define release %mkrel 0.20071103.1
 
 Summary:	3D first-person shooter game
 Name:		%{name}
@@ -8,9 +8,8 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Games/Arcade
-Source0:	%name-20051119.tar.bz2
+Source0:	%name-20071103.tar.bz2
 Source1:	%{name}-icons.tar.bz2
-Patch0:         AlephOne-fix-build.patch 
 URL:		http://sourceforge.net/projects/marathon/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libSDL-devel
@@ -30,10 +29,9 @@ AlephOne-minf-demo package.
 
 %prep
 
-%setup -q -n %name-20051119
-%patch0 -p1
+%setup -q -n %name-20071103
+
 %build
-export LDFLAGS="-L%_prefix/X11R6/%_lib $LDFLAGS"
 
 %configure	--bindir=%_gamesbindir \
 		--datadir=%_datadir/games \
