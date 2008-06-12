@@ -61,11 +61,15 @@ tar -xOjf %{SOURCE1} icons/48x48.png > ${RPM_BUILD_ROOT}%{_liconsdir}/%{name}.pn
 rm -fr $RPM_BUILD_ROOT/%_bindir/
 rm -fr $RPM_BUILD_ROOT/%_datadir/%name
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
