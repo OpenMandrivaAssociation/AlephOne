@@ -76,7 +76,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING INSTALL.Unix README docs/MML.html docs/Cheat_Codes
+%doc AUTHORS COPYING INSTALL.Unix README docs/MML.html
 %{_gamesbindir}/alephone
 %{_datadir}/games/%{name}/Fonts
 %dir %{_datadir}/games/%{name}
@@ -86,11 +86,13 @@ rm -rf ${RPM_BUILD_ROOT}
 %dir %{_datadir}/games/%{name}/Themes/Default
 %{_datadir}/games/%{name}/Themes/Default/*.bmp
 %{_datadir}/games/%{name}/Themes/Default/resources
-%{_datadir}/games/%{name}/Themes/Default/theme.mml
+#%{_datadir}/games/%{name}/Themes/Default/theme.mml
 %{_datadir}/applications/mandriva-*.desktop
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
-
-
-
+%{_datadir}/games/AlephOne/Themes/Default/DejaVuLGCSansCondensed-Bold.ttf
+%{_datadir}/games/AlephOne/Themes/Default/DejaVuLGCSansCondensed-BoldOblique.ttf
+%{_datadir}/games/AlephOne/Themes/Default/bankgthd.ttf
+%{_datadir}/games/AlephOne/Themes/Default/theme2.mml
+%{_mandir}/man6/alephone.6.lzma
