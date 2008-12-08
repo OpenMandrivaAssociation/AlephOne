@@ -1,6 +1,6 @@
 %define name	AlephOne
-%define version 0.19.0
-%define release %mkrel 0.20071103.1
+%define version 0.20.2
+%define release %mkrel 0.20080913.1
 
 Summary:	3D first-person shooter game
 Name:		%{name}
@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Games/Arcade
-Source0:	%name-20071103.tar.bz2
+Source0:	%name-20080913.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 URL:		http://sourceforge.net/projects/marathon/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -29,7 +29,7 @@ AlephOne-minf-demo package.
 
 %prep
 
-%setup -q -n %name-20071103
+%setup -q -n %name-20080913
 
 %build
 
