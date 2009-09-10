@@ -1,6 +1,6 @@
 %define name	AlephOne
 %define version 0.20.2
-%define release %mkrel 0.20080913.1
+%define release %mkrel 0.20080913.2
 
 Summary:	3D first-person shooter game
 Name:		%{name}
