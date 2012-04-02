@@ -9,10 +9,21 @@ Group:		Games/Arcade
 Source0:	%{name}-%{oversion}.tar.bz2
 Source1:	marathon.png
 URL:		http://sourceforge.net/projects/marathon/
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_net-devel
+BuildRequires:	pkgconfig(alsa)
+BuildRequires:	pkgconfig(mad)
+BuildRequires:	pkgconfig(sndfile)
+BuildRequires:	pkgconfig(speex)
+BuildRequires:	pkgconfig(vorbisfile)
+BuildRequires:	mesagl-devel
 BuildRequires:	mesaglu-devel
-BuildRequires:	boost-devel
+BuildRequires:	png-devel
+BuildRequires:	SDL-devel
+BuildRequires:	SDL_image-devel
+BuildRequires:	SDL_net-devel
+BuildRequires:	SDL_ttf-devel
+BuildRequires:	smpeg-devel
+BuildRequires:	zlib-devel
+BuildRequires:	zziplib-devel
 Provides:	alephone = %{version}-%{release}
 
 %description
