@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig(mad)
 BuildRequires:	pkgconfig(sndfile)
 BuildRequires:	pkgconfig(speex)
 BuildRequires:	pkgconfig(vorbisfile)
+BuildRequires:	boost-devel
 BuildRequires:	mesagl-devel
 BuildRequires:	mesaglu-devel
 BuildRequires:	png-devel
