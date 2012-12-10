@@ -1,13 +1,14 @@
 %define		oversion	20120128
-
+#define debug_package %{nil}
 Name:		AlephOne
-Version:	1.0.1
-Release:	%mkrel 1
-Summary:	An engine for 3D first-person shooter games Marathon 1, 2 and Infinity
-License:	GPL
+Version:		1.0.1
+Release:		1
+Summary:		An engine for 3D first-person shooter games Marathon 1, 2 and Infinity
+License:		GPL
 Group:		Games/Arcade
-Source0:	%{name}-%{oversion}.tar.bz2
-Source1:	marathon.png
+Source0:		%{name}-%{oversion}.tar.bz2
+Source1:		marathon.png
+Patch0:		lua_templates.patch
 URL:		http://sourceforge.net/projects/marathon/
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(mad)
@@ -37,6 +38,9 @@ Packages with game data are:
 
 %prep
 %setup -q -n %{name}-%{oversion}
+%patch0 -p0 $startdir/lua_templates.patch Source_Files/Lua/lua_templates.h
+
+
 
 %build
 %configure2_5x	--bindir=%{_gamesbindir} \
@@ -45,13 +49,10 @@ Packages with game data are:
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall_std
 %__mkdir_p %{buildroot}%{_datadir}/pixmaps
 %__cp %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/
 
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc AUTHORS COPYING README docs/MML.html
