@@ -41,7 +41,7 @@ Packages with game data are:
 %{_gamesbindir}/alephone
 %{_gamesdatadir}/%{name}
 %{_datadir}/pixmaps/marathon.png
-%{_mandir}/man6/*.6.*
+%{_mandir}/man6/*.6*
 
 #----------------------------------------------------------------------------
 
