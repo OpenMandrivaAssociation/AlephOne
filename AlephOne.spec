@@ -3,7 +3,7 @@
 Summary:	An engine for 3D first-person shooter games Marathon 1, 2 and Infinity
 Name:		AlephOne
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Games/Arcade
 Url:		http://sourceforge.net/projects/marathon/
