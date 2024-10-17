@@ -6,7 +6,7 @@ Version:	1.0.1
 Release:	3
 License:	GPLv3+
 Group:		Games/Arcade
-Url:		http://sourceforge.net/projects/marathon/
+Url:		https://sourceforge.net/projects/marathon/
 Source0:	%{name}-%{oversion}.tar.bz2
 Source1:	marathon.png
 Patch0:		lua_templates.patch
